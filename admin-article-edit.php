@@ -26,7 +26,7 @@ if (!empty($_GET['id'])) {
         header('Location: admin-article-list.php');
     }
 
-    $article = getArticle($link, $id);
+    $article = getArticle($db, $id);
 }
 
 include __DIR__.'/template/admin-article-add.php';
