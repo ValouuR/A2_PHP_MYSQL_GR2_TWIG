@@ -12,8 +12,8 @@ $i = count($articles);
 $j = 0;
 
 while($j<$i){
-    $articles[$j]['content'] = substr($articles[$j]['content'],0,100);
     $articles[$j]['title'] = substr($articles[$j]['title'],0,30);
+    $articles[$j]['content'] = substr($articles[$j]['content'],0,60);
     $j++;
 }
 
